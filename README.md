@@ -6,17 +6,19 @@ virtualenv : A virtual environment is a tool that helps to keep dependencies req
 
 pyenv  : Python verison switch (2.7 , 3.6 , 3.7) interpreter (switch one version to another version)
 
-create direcotry 
-for example   crawl
-crawl : requirements.txt
-crawl  : lib (directory)
-lib : two text file   1. setting.yaml
-                      2. Handler.py
- after that 
+Instruction create direcotry :
 
-firt one create enviorement  
-virtualenv __env name
-source env_name/bin/activate
+$ mkdir crawl
+crawl $ vi requirements.txt
+crawl $ mkdir lib
+$ cd lib
+lib $ vi settings.yaml
+lib $ vi hanlder.py
+$ cd ..
+
+crawl $ makdir ENV  
+virtualenv __ENV
+source ENV/bin/activate
 pip install request
 pip install pyyaml
 pip freeze > requirements.txt
