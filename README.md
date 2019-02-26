@@ -1,7 +1,6 @@
 # crawl
 
-This is my first Project
-
+Make a Document out of it. 
 
 firt one create directory 
 virtualenv __directory name
