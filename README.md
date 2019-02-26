@@ -16,10 +16,16 @@ lib $ vi settings.yaml <br />
 lib $ vi hanlder.py <br />
 $ cd .. <br />
 
-crawl $ makdir ENV <br />  
-virtualenv __ENV <br />
+crawl $ mkdir ENV <br />  
+virtualenv ENV <br />
 source ENV/bin/activate <br />
 pip install request <br />
 pip install pyyaml <br />
 pip freeze > requirements.txt <br />
 
+pip install -r requirements.txt
+(pip install request) and (pip install pyyaml) all version and package are install in requirements.txt file 
+after that no need for installation of (pip install request) and (pip install pyyaml)
+only install requirements.txt
+
+pip list :  show the version and package
