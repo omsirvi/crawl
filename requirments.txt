@@ -1,0 +1,7 @@
+get==2018.11.19
+pkg-resources==0.0.0
+post==2018.11.20
+public==2018.11.20
+PyYAML==3.13
+query-string==2018.11.20
+request==2018.11.20
