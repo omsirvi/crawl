@@ -8,18 +8,18 @@ pyenv  : Python verison switch (2.7 , 3.6 , 3.7) interpreter (switch one version
 
 Instruction create direcotry :
 
-$ mkdir crawl
-crawl $ vi requirements.txt
-crawl $ mkdir lib
-$ cd lib
-lib $ vi settings.yaml
-lib $ vi hanlder.py
-$ cd ..
+$ mkdir crawl <br />
+crawl $ vi requirements.txt <br />
+crawl $ mkdir lib <br />
+$ cd lib <br />
+lib $ vi settings.yaml <br />
+lib $ vi hanlder.py <br />
+$ cd .. <br />
 
-crawl $ makdir ENV  
-virtualenv __ENV
-source ENV/bin/activate
-pip install request
-pip install pyyaml
-pip freeze > requirements.txt
+crawl $ makdir ENV <br />  
+virtualenv __ENV <br />
+source ENV/bin/activate <br />
+pip install request <br />
+pip install pyyaml <br />
+pip freeze > requirements.txt <br />
 
