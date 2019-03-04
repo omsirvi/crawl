@@ -30,8 +30,20 @@ for record in soup.find_all('option'):
                 court_value = sub_cat.get('value')
                 print('court  => %s |  %s'%(court_name, court_value))
                 url = 'https://nclt.gov.in/pdf-cause-list?field_bench_target_id=%s&field_bench_court_target_id_entityreference_filter=%s'%(banch_value,court_value)
-                print(url)
-                print('')
+            
+                html_page = requests.get(url , verify=False).content
+
+                soup = BeautifulSoup(html_page, 'html.parser')
+
+                for pdf in soup.find_all("td", {"views-field views-field-field-pdf-file"}):
+                    pdf_url = pdf.a.get('href')
+                    print(pdf_url)
+                    html_page = requests.get(pdf_url).content
+                    file_write = open('home.html', 'wb')
+                    file_write.write(html)
+                    file_write.close()
+
+                    print('')
 
         print('**'*20)
         print('')
