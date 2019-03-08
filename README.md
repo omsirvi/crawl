@@ -51,6 +51,11 @@ from bs4 import BeautifulSoup <br />
 
 ##WebSite Get Requests <br />
 #html = requests.get('https://nclt.gov.in/exposed-pdf-cause-list-page', verify=False).content <br />
+
+File write operation: <br />
+We can to create file name like 'home.html' and open in the modes <br /> 
+w [write mode] b[accept binanry] r[read mode] etc  <br />
+Then push data to the write function and close the file for safe operation. <br />
 """ FILE WRITE <br />
 file_write = open('home.html', 'wb') <br />
 file_write.write(html) <br />
